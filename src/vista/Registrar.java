@@ -62,11 +62,16 @@ public class Registrar extends JFrame {
 		
 		JButton btnNewButton = new JButton("Ingresar");
 		btnNewButton.addActionListener(new ActionListener() {
+			
+			//Boton donde al pulsarlo se envian los datos insertados en el recuadro blanco su nombre y su contraseña
+			
 			public void actionPerformed(ActionEvent e) {				
 				if (passwordField.getText().equals(passwordField_1.getText())) {					
 					Controller.registrar(textField.getText(), passwordField.getText());
 				}
 				else {
+					//Este if solamente acredita si la conraseña y el repetir contraseña coinciden si no es a sin saldra este mensaje
+					
 					JOptionPane.showMessageDialog(null, "No coinciden la Contraseña con el repetir Contraseña");
 				}			
 			}
@@ -80,6 +85,8 @@ public class Registrar extends JFrame {
 		lblNewLabel.setFont(new Font("Blackadder ITC", Font.BOLD, 25));
 		lblNewLabel.setBounds(29, 94, 98, 38);
 		panel.add(lblNewLabel);
+		
+		//Todos los recuadros donde se insertan todos los datos aunque la direccion no es necesario la deje por estetica
 		
 		JLabel lblApellidos = new JLabel("Apellidos:");
 		lblApellidos.setForeground(Color.ORANGE);
@@ -116,6 +123,8 @@ public class Registrar extends JFrame {
 		textField_1.setColumns(10);
 		textField_1.setBounds(198, 194, 148, 38);
 		panel.add(textField_1);
+		
+		//fondo de pantalla gif del registro de usuario
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\juanm\\OneDrive\\Ambiente de Trabalho\\Curso ADA\\Java\\Proyecto\\src\\imgVista\\clavedesolMovimiento.gif"));

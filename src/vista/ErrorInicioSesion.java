@@ -42,6 +42,8 @@ public class ErrorInicioSesion extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//En esta clase no hay mucho que explicar es una pantalla normal y corriente que inserta en el que el usuaior o password fueron incorrectos y no se encuentran en la database
+		
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 0, 548, 353);
 		contentPane.add(panel);

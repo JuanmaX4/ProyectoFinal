@@ -19,6 +19,8 @@ public class Producto {
 		
 	}
 	
+	//Constructor donde se implementan ahi los for de la database proyecto de la tabla producto en el loginAdmin al darle TablaProducto
+	
 	public Producto(int idProducto, String nombreProducto, 
 			double precio, int stock, String estado) {
 		
@@ -28,6 +30,8 @@ public class Producto {
 		this.stock=stock;
 		this.estado=estado;
 	}
+	
+	//BETA constructor productos donde se verian en la tabla cesta del usuario que no fue implementado por falta de tiempo
 	
 	public Producto(String nombre, String nombreProducto, double precio, int cantidad, double precioVenta) {
 		this.nombre=nombre;

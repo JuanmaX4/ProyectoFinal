@@ -94,11 +94,15 @@ public class SqlAdmin {
 		new Conexion().EjecutarUpdate("INSERT INTO producto (Nombres, Precio, Stock, Estado) values ('"+nuevoProducto+"', '"+nuevoPrecio+"', '"+nuevoCantidad+"', '"+nuevoEstado+"');");
 	}
 
+	//En beta no se pudo actualizar por falta de tiempo este metodode historial de compra
+	
 	public void insertarCesta(int IdProducto, String nombreUser, String nombreProduc, int cantidad, double precio) {
 		
 		int numIdDetalleVentas=(int) Math.floor(Math.random()*9999+1);
 		
 		int numIdVentas=(int) Math.floor(Math.random()*9999+1);
+		
+		//esto fue un intento de insertar numeros random para los id detalle ventas e idventas luego a lo mejor pondria un if para que no puedan ser iguales pero tendria que hacerlo mediante la database y es demasiado veo yo
 		
 		new Conexion().EjecutarUpdate("INSERT INTO detalle_ventas (IdDetalleVentas, IdVentas, IdProducto, Nombre_Usuario,  Nombre_Producto, Precio, Cantidad) values ('"+numIdDetalleVentas+"', '"+numIdVentas+"', '"+IdProducto+"', '"+nombreUser+"', '"+nombreProduc+"', '"+precio+"', '"+cantidad+"');");		
 	}
