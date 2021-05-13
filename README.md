@@ -11,9 +11,14 @@ Version Alpha....
 
 De nuevo empeze con el login y el resgistrar estuve todo el finde haciendolo y el lunes de esa semana empeze a hacer el conectar y el registrar usuario en la database.
 
+Version Beta...
+
 Despues a lo largo de esta semana empeze a conectarme con la database haciendo que se pueda ver los usuarios en la tabla no sin antes hacer su interfaz, la vista fue la primera prioridad para saber orientarme y de nuevo el controlador que hace que sepa donde va cada metodo.
 
 La ultima semana puse loginAdmin implantando la tabla usuario y la tabla producto, con los for y el array List que me ayudo a orientarme gracias a su Codigo Gabri.
+
+
+Verions 1.0.0
 
 Ya por ultimo implemente los sonidos de la tienda al añadirlo a la cesta, que desgraciadamente esa parte se quedara en beta y no se podra entregar correctamente por falta de tiempo, ya que estuve intentandolo poner en la tabla detalles_ventas como IdDetalles_ventas una clave foranea de Producto, detalles_ventas estaba vacio pero donde tenia mas problemas era en la consulta con el constraint intentare hacerlo porque la entrega todavia no se ha cerrado...
 
