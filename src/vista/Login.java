@@ -52,12 +52,7 @@ public class Login extends JFrame {
 	 * Create the frame.
 	 */
 	public Login() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\juanm\\OneDrive\\Ambiente de Trabalho\\Curso ADA\\Java\\Proyecto\\src\\imgVista\\iconoProyecto.jpg"));
-		
-		//La musica de fondo del login mientras te registras o introduces tu nombre y password
-		
-		new Controller().ReproducirSonido("src/vista/sonido/42ndStreet.wav");
-		
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\juanm\\OneDrive\\Ambiente de Trabalho\\Curso ADA\\Java\\Proyecto\\src\\imgVista\\iconoProyecto.jpg"));		
 		setResizable(false);
 		setTitle("Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
